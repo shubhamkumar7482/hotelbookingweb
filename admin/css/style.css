@@ -1,0 +1,80 @@
+
+/* this is for input arrow remove scss  */
+/* Chrome, Safari, Edge, Opera */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+ /* some custom class  */
+
+ .header-font {
+    font-family: 'Oleo Script', cursive;
+}
+.header-color{
+    color: #0943A0 ;
+}
+.cutom-color {
+    background: #0641a0;
+}
+
+.cutom-color:hover {
+    background: #044cc1;
+}
+.shadow{
+    box-shadow: -1px 0px 27px 10px rgb(0 0 255 / 9%), -2px 6px 10px 1px rgb(0 0 255 / 10%) !important;
+}
+.custom-alert{
+    position: fixed;
+    top:80px;
+    right: 25px;
+}
+
+/* dashboard-menu */
+#dashboard-menu{
+    position: fixed;
+    height: 100%;
+    z-index: 99;
+}
+/* customized scrollbar  */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: hwb(0 2% 98% / 0.807);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+@media screen and (max-width:991px) {
+    #dashboard-menu{
+        height: auto !important;
+        width: 100% !important;
+    }
+    
+    #main-content{
+       margin-top: 60px;
+    }
+}
